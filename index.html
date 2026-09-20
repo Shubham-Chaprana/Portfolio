@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shubham Chaprana — Full-Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;1,9..144,450&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="mark">Shubham Chaprana</div>
+  <nav class="links">
+    <a href="#work">Work</a>
+    <a href="#contributions">Contributions</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="nav-toggle" id="nav-toggle" aria-label="Open menu">
+    <span></span><span></span>
+  </button>
+</header>
+
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#work">Work</a>
+  <a href="#contributions">Contributions</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<main>
+  <section class="hero wrap">
+    <div class="hero-name" id="hero-name">Shubham Chaprana</div>
+    <div class="kicker" data-reveal-fade>2nd-year CS student · full-stack developer</div>
+    <h1 id="hero-title"></h1>
+    <div class="row">
+      <p class="lede" data-reveal-fade>I build with Django, React and PostgreSQL — a few shipped side projects, one open-source merge, and a couple of hackathon builds so far, with more on the way.</p>
+      <span class="magnetic" data-magnetic>
+        <a class="btn" href="#contact"><span class="dot"></span>Get in touch</a>
+      </span>
+    </div>
+  </section>
+
+  <section class="statement wrap">
+    <div class="grid">
+      <div class="label" data-reveal-fade>Where I'm at</div>
+      <p class="big" data-reveal-fade>Still early — no professional experience yet. What I do have is a habit of finishing what I start: shipped side projects, real deployments, and code other maintainers have merged.</p>
+    </div>
+  </section>
+
+  <section class="skills wrap">
+    <div class="row-wrap" data-reveal-fade>
+      <span class="chip">HTML</span>
+      <span class="chip">CSS</span>
+      <span class="chip">JavaScript</span>
+      <span class="chip">React</span>
+      <span class="chip">Django</span>
+      <span class="chip">Django REST Framework</span>
+      <span class="chip">Python</span>
+      <span class="chip">C++</span>
+      <span class="chip">SQL / PostgreSQL</span>
+      <span class="chip">REST APIs</span>
+      <span class="chip">CRUD systems</span>
+      <span class="chip">JWT Auth</span>
+    </div>
+  </section>
+
+  <section class="work-pin" id="work">
+    <div class="work-sticky">
+      <div class="work-heading">
+        <h2>Projects</h2>
+        <p>Two full-stack builds, designed, built and deployed solo.</p>
+      </div>
+      <div class="work-track" data-scrub-track>
+        <div class="panel p1">
+          <div class="p-content">
+            <div class="p-tag">AI-powered app</div>
+            <h3>Ingredia</h3>
+            <p>Generates recipes from the ingredients a user already has. JWT auth, saved recipe history, rate-limited AI calls via Google Gemini.</p>
+            <div class="stack">React · Vite · Django REST Framework · PostgreSQL (Neon) · Gemini API · deployed on Render</div>
+            <div class="plinks">
+              <a href="https://ingredia-frontend.onrender.com" target="_blank" rel="noopener">Live demo</a>
+              <span>·</span>
+              <a href="https://github.com/Shubham-Chaprana/Ingredia" target="_blank" rel="noopener">Code</a>
+            </div>
+          </div>
+        </div>
+        <div class="panel p2">
+          <div class="p-content">
+            <div class="p-tag">Full-stack CRUD</div>
+            <h3>Jotly</h3>
+            <p>A notes app with authentication, search, and pinning — each user sees only their own notes.</p>
+            <div class="stack">Django · Django templates · PostgreSQL (Neon) · deployed on Render</div>
+            <div class="plinks">
+              <a href="https://jotly-gus5.onrender.com" target="_blank" rel="noopener">Live demo</a>
+              <span>·</span>
+              <a href="https://github.com/Shubham-Chaprana/Jotly" target="_blank" rel="noopener">Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contrib wrap" id="contributions">
+    <h2>Open source &amp; hackathons</h2>
+    <div class="items">
+      <div class="item" data-reveal-stagger>
+        <span class="tag">Open source</span>
+        <h4>PyLadiesCon Portal</h4>
+        <p>Merged pull request on the PyLadiesCon global conference web portal — my first open-source contribution.</p>
+      </div>
+      <div class="item" data-reveal-stagger>
+        <span class="tag">Hackathon</span>
+        <h4>NIGRANI</h4>
+        <p>Built the backend for this team hackathon project — an AI-assisted civic safety reporting platform for anonymized incident reports.</p>
+      </div>
+      <div class="item" data-reveal-stagger>
+        <span class="tag">Hackathon</span>
+        <h4>Airwatch backend</h4>
+        <p>Backend for a team hackathon project, plus a data dashboard built for the Smart India Hackathon.</p>
+      </div>
+    </div>
+    <p data-reveal-fade style="color: var(--slate); font-size: 0.86rem; margin-top: 2.4rem;">A few more open-source pull requests are currently in review.</p>
+  </section>
+
+  <section class="contact wrap" id="contact">
+    <h2>Open to internships and small freelance projects.</h2>
+    <div class="row">
+      <div class="contact-links">
+        <span class="magnetic" data-magnetic>
+          <a class="btn" id="email-btn" href="mailto:shubham.chaprana.ug25@nsut.ac.in" target="_top"><span class="dot"></span><span id="email-btn-text">shubham.chaprana.ug25@nsut.ac.in</span></a>
+        </span>
+        <span class="magnetic" data-magnetic>
+          <a class="btn" href="https://www.linkedin.com/in/shubham-chaprana-16195b376" target="_blank" rel="noopener"><span class="dot"></span>LinkedIn</a>
+        </span>
+        <span class="magnetic" data-magnetic>
+          <a class="btn" href="https://github.com/Shubham-Chaprana" target="_blank" rel="noopener"><span class="dot"></span>GitHub</a>
+        </span>
+      </div>
+      <div class="addr">2nd-year student, NSUT.<br>Open to remote/part-time work.</div>
+    </div>
+  </section>
+
+  <footer>
+    <span>&copy; 2026 Shubham Chaprana</span>
+    <span>Built with HTML, GSAP &amp; Lenis</span>
+  </footer>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
